@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store</title>
+  <style>
+    /* Estilos generales para el cuerpo */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Estilo para el header con el nombre de la tienda y menú */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sección principal de productos */
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .product p {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .buy-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .buy-btn:hover {
+      background-color: #218838;
+    }
+
+    /* Estilos para dispositivos móviles */
+    @media (max-width: 768px) {
+      nav {
+        text-align: center;
+      }
+
+      .product-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header con nombre de la tienda y menú -->
+  <header>
+    <h1>Fashion Store</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Carrito</a>
+    </nav>
+  </header>
+
+  <!-- Sección de productos -->
+  <section class="product-container">
+    <!-- Producto 1: Camisa Elegante -->
+    <div class="product">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_923016-MCO46801287829_072021-O.webp" alt="Camisa Elegante">
+      <h3>Camisa Elegante</h3>
+      <p>Camisa de algodón de alta calidad, perfecta para ocasiones especiales.</p>
+      <a href="https://wa.me/?text=Me%20interesa%20el%20producto%20Camisa%20Elegante" class="buy-btn" target="_blank">Comprar ahora</a>
+    </div>
+
+    <!-- Producto 2: Pantalón de Vestir -->
+    <div class="product">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_903646-MCO73656607283_122023-O.webp" alt="Pantalón de Vestir">
+      <h3>Pantalón de Vestir</h3>
+      <p>Pantalón elegante para eventos formales, disponible en varios colores.</p>
+      <a href="https://wa.me/?text=Me%20interesa%20el%20producto%20Pantalón%20de%20Vestir" class="buy-btn" target="_blank">Comprar ahora</a>
+    </div>
+
+    <!-- Producto 3: Zapatos de Cuero -->
+    <div class="product">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_829746-CBT75487458221_032024-O.webp" alt="Zapatos de Cuero">
+      <h3>Zapatos de Cuero</h3>
+      <p>Zapatos de cuero con diseño exclusivo, ideales para cualquier evento.</p>
+      <a href="https://wa.me/?text=Me%20interesa%20el%20producto%20Zapatos%20de%20Cuero" class="buy-btn" target="_blank">Comprar ahora</a>
+    </div>
+
+    <!-- Producto 4: Chaqueta de Cuero -->
+    <div class="product">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_781306-MCO72820529877_112023-F.webp" alt="Chaqueta de Cuero">
+      <h3>Chaqueta de Cuero</h3>
+      <p>Chaqueta de cuero auténtico, cómoda y de estilo único.</p>
+      <a href="https://wa.me/?text=Me%20interesa%20el%20producto%20Chaqueta%20de%20Cuero" class="buy-btn" target="_blank">Comprar ahora</a>
+    </div>
+
+    <!-- Producto 5: Vestido de Noche -->
+    <div class="product">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_965180-MCO72631061682_112023-O.webp" alt="Vestido de Noche">
+      <h3>Vestido de Noche</h3>
+      <p>Elegante vestido de noche con detalles en encaje, perfecto para cualquier ocasión.</p>
+      <a href="https://wa.me/?text=Me%20interesa%20el%20producto%20Vestido%20de%20Noche" class="buy-btn" target="_blank">Comprar ahora</a>
+    </div>
+  </section>
+
+</body>
+
+</html>
